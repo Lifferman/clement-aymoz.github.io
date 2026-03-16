@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: https://Lifferman.github.io/sitemap.xml
+Sitemap: https://clement-aymoz.github.io/sitemap.xml
