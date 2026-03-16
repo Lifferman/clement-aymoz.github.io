@@ -38,13 +38,12 @@
       <div class="identity">
 
         <!--
-        ╔══════════════════════════════════════════════╗
-        ║  📸  VOTRE PHOTO                             ║
-        ║  Fichier : assets/photo.jpg                  ║
-        ║  Format  : JPG, PNG ou WebP                  ║
-        ║  Taille  : 400×400 px minimum (carré)        ║
-        ║  Si absent → initiales affichées à la place  ║
-        ╚══════════════════════════════════════════════╝
+          PHOTO — GitHub Pages est sensible à la casse (serveur Linux).
+          Le nom du fichier DOIT être exactement en minuscules : photo.jpg
+          Si la photo ne s'affiche pas en ligne, corriger avec git :
+            git mv assets/Photo.jpg assets/photo.jpg
+            git commit -m "fix: lowercase photo filename"
+            git push
         -->
         <div class="avatar-wrapper">
           <img
@@ -61,7 +60,7 @@
           <h1>Clément <span class="name-accent">AYMOZ</span></h1>
           <p class="subtitle">Administrateur Systèmes &amp; Réseaux</p>
           <p class="contact-line">
-            <a href="mailto:clement.aymoz@outlook.fr">clement.aymoz@outlook.fr</a>
+            <a href="/cdn-cgi/l/email-protection#690a050c040c071d47081004061329061c1d05060602470f1b"><span class="__cf_email__" data-cfemail="3556595058505b411b544c585a4f755a4041595a5a5e1b5347">[email&#160;protected]</span></a>
             <span class="sep" aria-hidden="true">·</span>
             <a href="tel:+33651776508">+33 6 51 77 65 08</a>
             <span class="sep" aria-hidden="true">·</span>
@@ -85,7 +84,6 @@
         <a href="#competences">Compétences</a>
         <a href="#experience">Expérience</a>
         <a href="#realisations">Réalisations</a>
-        <a href="#projets">Projets</a>
         <a href="#formation">Formation</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -98,15 +96,50 @@
     <!-- ── PROFIL ── -->
     <section id="profil" aria-labelledby="h-profil" class="cv-section">
       <h2 id="h-profil"><span class="section-num" aria-hidden="true">01</span>Profil</h2>
-      <p class="lead">
-        Administrateur systèmes &amp; réseaux au sein d'une collectivité territoriale depuis 2020,
-        avec une expertise confirmée sur l'ensemble du SI : <strong>Windows Server</strong> (AD, GPO, DNS/DHCP),
-        <strong>Linux</strong>, déploiement (<strong>SCCM / Intune / MobileIron</strong>), virtualisation
-        (<strong>VMware / Hyper‑V / Proxmox</strong>) et sécurité réseau (<strong>Cisco</strong>, <strong>Stormshield</strong>,
-        conformité <strong>ANSSI</strong>). Habitué à piloter des projets transverses — déploiements
-        d'infrastructure, outils collaboratifs <strong>SharePoint / Power BI</strong>, renforcement
-        cybersécurité — en autonomie ou en équipe, avec un sens aigu du service et de la documentation.
-      </p>
+
+      <div class="profil-card">
+        <p class="profil-tagline">
+          Administrateur systèmes &amp; réseaux en collectivité territoriale,
+          5 ans d'expérience sur l'intégralité du SI.
+        </p>
+        <p class="profil-body">
+          Expertise couvrant l'infrastructure (<strong>Windows Server</strong>, AD/GPO, DNS/DHCP,
+          <strong>Linux</strong>), le déploiement et la gestion de parc (<strong>SCCM / Endpoint Central</strong>,
+          <strong>GLPI</strong>), la virtualisation (<strong>VMware / Hyper‑V</strong>) et la sécurité réseau
+          (<strong>Fortinet FortiGate</strong>, <strong>Cisco</strong>, conformité <strong>ANSSI</strong>).
+          Pilotage de projets transverses — infrastructure réseau, outils collaboratifs
+          <strong>SharePoint / Power BI</strong>, instances <strong>GLPI</strong> métier,
+          renforcement cybersécurité — en autonomie et en équipe.
+        </p>
+        <div class="profil-stats" aria-label="Chiffres clés">
+          <div class="stat">
+            <span class="stat-value">5+</span>
+            <span class="stat-label">ans d'expérience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">ANSSI</span>
+            <span class="stat-label">conformité appliquée</span>
+          </div>
+        </div>
+        <ul class="profil-traits" aria-label="Points forts">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Autonomie &amp; rigueur technique
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Sens du service &amp; esprit d'équipe
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Documentation claire, procédures à jour
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Force de proposition, toujours volontaire
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- ── COMPÉTENCES ── -->
@@ -131,8 +164,7 @@
           <h3>Déploiement &amp; Parc</h3>
           <ul class="chips">
             <li>SCCM / ConfigMgr</li>
-            <li>Microsoft Intune</li>
-            <li>MobileIron</li>
+            <li>Endpoint Central</li>
             <li>PowerShell</li>
             <li>MDT</li>
             <li>GLPI</li>
@@ -144,6 +176,7 @@
           <ul class="chips">
             <li>VLAN / VPN (IPsec, SSL)</li>
             <li>Cisco (IOS)</li>
+            <li>Fortinet (FortiGate)</li>
             <li>Stormshield (SNS)</li>
             <li>Pare-feu / Bastion</li>
             <li>OKTA (MFA)</li>
@@ -157,7 +190,6 @@
           <ul class="chips">
             <li>VMware vSphere</li>
             <li>Hyper-V</li>
-            <li>Proxmox</li>
             <li>Supervision réseau</li>
             <li>Sauvegarde / PRA</li>
           </ul>
@@ -200,7 +232,7 @@
             <ul>
               <li>Administration <strong>Active Directory</strong>, GPO, DNS/DHCP sur environnement multi-sites.</li>
               <li>Refonte et segmentation du réseau en conformité avec les recommandations <strong>ANSSI</strong> (VLAN par profils : utilisateurs, serveurs, IoT).</li>
-              <li>Déploiement et administration des pare-feux <strong>Stormshield</strong>, mise en place d'un <strong>VPN IPsec</strong> inter-sites (Douaisis Agglo ↔ ARKEOS).</li>
+              <li>Déploiement et administration des pare-feux <strong>Fortinet (FortiGate)</strong>, mise en place d'un <strong>VPN IPsec</strong> inter-sites (Douaisis Agglo ↔ ARKEOS).</li>
               <li>Mise en service du réseau et des outils pour l'ouverture du site <strong>CEDI</strong> ; câblage et raccordement de nouveaux bâtiments (EUREKA, taverne médiévale ARKEOS).</li>
               <li>Renouvellement complet du matériel de la <strong>salle serveur</strong> (optimisation des ressources, continuité de service).</li>
             </ul>
@@ -220,7 +252,7 @@
           <div class="job-theme">
             <span class="theme-label">Déploiement &amp; Gestion du parc</span>
             <ul>
-              <li>Déploiement d'images et d'applications via <strong>SCCM / Intune</strong> ; montée en compétences sur <strong>MobileIron</strong> (MDM mobilité).</li>
+              <li>Déploiement d'images et d'applications via <strong>SCCM</strong> et <strong>Endpoint Central</strong> (gestion de parc, MDM).</li>
               <li>Automatisation des tâches d'administration (inventaire, comptes AD, reporting) via <strong>PowerShell</strong>.</li>
               <li>Déploiement du WiFi public sécurisé <strong>UCOPIA</strong> pour les accès visiteurs / usagers externes.</li>
               <li>Support N2 quotidien auprès des agents, rédaction de procédures dans la base de connaissances <strong>GLPI</strong>.</li>
@@ -232,7 +264,7 @@
             <ul>
               <li>Développement de portails et applications <strong>SharePoint</strong> pour de nombreux services (extranet, équipements culturels, gestion RH, indicateurs…).</li>
               <li>Conception de tableaux de bord <strong>Power BI</strong> (modélisation, visualisations, automatisation des actualisations) pour le pilotage des directions.</li>
-              <li>Déploiement de la plateforme <strong>HelpBat</strong> (gestion des incidents du service Bâtiment) et <strong>WelcomeDesk</strong> (accueil des travailleurs étrangers).</li>
+              <li>Déploiement et administration d'instances <strong>GLPI</strong> métier : <strong>HelpBat</strong> (service Bâtiment), <strong>HelpRH</strong> (ressources humaines), <strong>HelpDesk</strong> (support informatique) et <strong>WelcomeDesk</strong> (accueil des travailleurs étrangers).</li>
               <li>Migration de la gestion des salles de réunion vers <strong>Outlook / Exchange</strong> automatisé.</li>
             </ul>
           </div>
@@ -289,8 +321,8 @@
 
         <article class="project-card">
           <h3>Refonte sécurité réseau</h3>
-          <p>Segmentation complète du SI selon les préconisations ANSSI (VLAN utilisateurs / serveurs / IoT), renouvellement des pare-feux Stormshield, déploiement d'un bastion et mise en place du MFA OKTA.</p>
-          <ul class="chips small"><li>Stormshield</li><li>VLAN</li><li>Bastion</li><li>OKTA</li><li>ANSSI</li></ul>
+          <p>Segmentation complète du SI selon les préconisations ANSSI (VLAN utilisateurs / serveurs / IoT), renouvellement et administration des pare-feux <strong>Fortinet (FortiGate)</strong>, déploiement d'un bastion et mise en place du MFA OKTA.</p>
+          <ul class="chips small"><li>Fortinet</li><li>VLAN</li><li>Bastion</li><li>OKTA</li><li>ANSSI</li></ul>
         </article>
 
         <article class="project-card">
@@ -314,7 +346,7 @@
         <article class="project-card">
           <h3>VPN IPsec inter-sites</h3>
           <p>Mise en place d'un tunnel VPN IPsec entre Douaisis Agglo et ARKEOS pour unifier la gestion AD, permettre l'accès distant aux réseaux/serveurs ARKEOS et rapatrier le serveur GTB (chaufferie, hydrométrie).</p>
-          <ul class="chips small"><li>VPN IPsec</li><li>Stormshield</li><li>AD DS</li></ul>
+          <ul class="chips small"><li>VPN IPsec</li><li>Fortinet</li><li>AD DS</li></ul>
         </article>
 
         <article class="project-card">
@@ -325,8 +357,20 @@
 
         <article class="project-card">
           <h3>Portails SharePoint multi-services</h3>
-          <p>Développement de portails et applications SharePoint pour une dizaine de services : extranet, équipements culturels &amp; scientifiques, gestion RH, assistance bâtiment (HelpBat), WelcomeDesk.</p>
+          <p>Développement de portails et applications SharePoint pour de nombreux services : extranet inter-directions, équipements culturels &amp; scientifiques, tableaux de bord Power BI, automatisation des processus internes.</p>
           <ul class="chips small"><li>SharePoint</li><li>Microsoft 365</li><li>Power Automate</li></ul>
+        </article>
+
+        <article class="project-card">
+          <h3>Instances GLPI métier</h3>
+          <p>Déploiement et administration de quatre instances <strong>GLPI</strong> dédiées : <strong>HelpDesk</strong> (support informatique), <strong>HelpBat</strong> (service Bâtiment), <strong>HelpRH</strong> (ressources humaines) et <strong>WelcomeDesk</strong> (accueil des travailleurs étrangers).</p>
+          <ul class="chips small"><li>GLPI</li><li>Helpdesk</li><li>Gestion de parc</li><li>Workflow</li></ul>
+        </article>
+
+        <article class="project-card">
+          <h3>Soutien technique — Conseils communautaires &amp; conférences des maires</h3>
+          <p>Mission récurrente, en équipe, lors des instances politiques de Douaisis Agglo : installation collective des écrans, câblages et microphonie. Prise en charge personnelle du poste de régie — projection des documents de séance sur les écrans et pilotage de la <strong>caméra 360°</strong> pour la diffusion en direct — ainsi que le dépannage et l'assistance aux élus en séance.</p>
+          <ul class="chips small"><li>AV / Événementiel</li><li>Régie PC</li><li>Caméra 360°</li><li>Microphonie</li><li>Assistance élus</li></ul>
         </article>
 
         <article class="project-card">
@@ -338,37 +382,10 @@
       </div>
     </section>
 
-    <!-- ── PROJETS PERSONNELS ── -->
-    <section id="projets" aria-labelledby="h-projets" class="cv-section">
-      <h2 id="h-projets"><span class="section-num" aria-hidden="true">05</span>Projets personnels</h2>
-      <div class="projects-grid">
-
-        <article class="project-card">
-          <h3>Homelab Virtualisation</h3>
-          <p>Environnement de lab sur <strong>Proxmox / VMware</strong> : Active Directory, DNS/DHCP, supervision réseau, politiques de sauvegarde et reprise d'activité.</p>
-          <ul class="chips small"><li>Proxmox</li><li>VMware</li><li>AD DS</li><li>Supervision</li></ul>
-        </article>
-
-        <article class="project-card">
-          <h3>Automatisations PowerShell</h3>
-          <p>Scripts de déploiement logiciel, inventaire parc, gestion des comptes AD et reporting automatisé des mises à jour.</p>
-          <ul class="chips small"><li>PowerShell</li><li>SCCM</li><li>Active Directory</li></ul>
-        </article>
-
-      </div>
-    </section>
-
     <!-- ── FORMATION ── -->
     <section id="formation" aria-labelledby="h-formation" class="cv-section">
-      <h2 id="h-formation"><span class="section-num" aria-hidden="true">06</span>Formation</h2>
+      <h2 id="h-formation"><span class="section-num" aria-hidden="true">05</span>Formation</h2>
       <ul class="edu-list">
-        <li class="edu-item">
-          <span class="edu-year">2025</span>
-          <div>
-            <strong>Formation MobileIron</strong>
-            <span class="edu-org">Gestion de la mobilité et sécurité des terminaux (MDM)</span>
-          </div>
-        </li>
         <li class="edu-item">
           <span class="edu-year">2019 – 2020</span>
           <div>
@@ -386,7 +403,7 @@
         <li class="edu-item">
           <span class="edu-year">2015 – 2017</span>
           <div>
-            <strong>Bac S — spécialité Science de l’Ingénieur/Science de l’Information et du Numérique</strong>
+            <strong>Bac S — spécialité Sciences de l'Ingénieur / Sciences de l'Information et du Numérique</strong>
             <span class="edu-org">Lycée Edmond Labbé, Douai (59)</span>
           </div>
         </li>
@@ -395,9 +412,9 @@
 
     <!-- ── CONTACT ── -->
     <section id="contact" aria-labelledby="h-contact" class="cv-section">
-      <h2 id="h-contact"><span class="section-num" aria-hidden="true">07</span>Contact</h2>
+      <h2 id="h-contact"><span class="section-num" aria-hidden="true">06</span>Contact</h2>
       <address class="contact-block">
-        <p><a href="mailto:clement.aymoz@outlook.fr"><span class="contact-icon" aria-hidden="true">✉</span>clement.aymoz@outlook.fr</a></p>
+        <p><a href="/cdn-cgi/l/email-protection#8fece3eae2eae1fba1eef6e2e0f5cfe0fafbe3e0e0e4a1e9fd"><span class="contact-icon" aria-hidden="true">✉</span><span class="__cf_email__" data-cfemail="0b68676e666e657f256a726664714b647e7f67646460256d79">[email&#160;protected]</span></a></p>
         <p><a href="tel:+33651776508"><span class="contact-icon" aria-hidden="true">☎</span>+33 6 51 77 65 08</a></p>
         <p><span class="contact-icon" aria-hidden="true">⌖</span>Douai, Nord (59), France</p>
         <p class="contact-ext">
@@ -405,17 +422,4 @@
           <a href="https://github.com/TON-GITHUB" target="_blank" rel="noopener noreferrer">GitHub →</a>
         </p>
       </address>
-      <p class="hint"><strong>Astuce PDF :</strong> utiliser <kbd>Ctrl / ⌘ + P</kbd> → "Enregistrer en PDF". La mise en page est optimisée A4.</p>
-    </section>
-
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container small footer-inner">
-      <p>© Clément AYMOZ — Administrateur Systèmes &amp; Réseaux</p>
-      <p class="footer-note">Douai, France</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+      <p class="hint"><strong>Astuce PDF :</strong> utiliser <kbd>Ctrl / ⌘ + P</kbd> → "Enregistrer en PDF". La mise en page est optimisée A4.<
